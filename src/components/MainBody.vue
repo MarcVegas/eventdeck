@@ -3,7 +3,7 @@
 </script>
 
 <template>
-<main class="ml-20">
-
+<main class="lg:ml-20">
+    <slot></slot>
 </main>
 </template>
