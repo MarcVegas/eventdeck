@@ -1,6 +1,8 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 
+import VueChartkick from 'vue-chartkick'
+import 'chart.js'
 //Icons
 import ViewDashboard from 'vue-material-design-icons/ViewDashboard.vue'
 import Feather from 'vue-material-design-icons/Feather.vue'
@@ -16,5 +18,7 @@ app.component('ViewDashboard', ViewDashboard)
     .component('Poll', Poll)
     .component('AccountCog', AccountCog)
     .component('TuneVariant', TuneVariant)
+
+app.use(VueChartkick)
 
 app.mount('#app')
