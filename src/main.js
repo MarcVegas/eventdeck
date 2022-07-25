@@ -2,7 +2,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 
 import VueChartkick from 'vue-chartkick'
-import 'chart.js'
+import 'chartkick/chart.js'
 //Icons
 import ViewDashboard from 'vue-material-design-icons/ViewDashboard.vue'
 import Feather from 'vue-material-design-icons/Feather.vue'
@@ -11,6 +11,7 @@ import AccountCog from 'vue-material-design-icons/AccountCog.vue'
 import TuneVariant from 'vue-material-design-icons/TuneVariant.vue'
 
 import './index.css'
+import './css/shared.css'
 
 const app = createApp(App)
 app.component('ViewDashboard', ViewDashboard)
