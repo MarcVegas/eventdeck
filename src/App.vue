@@ -9,6 +9,6 @@ import Dashboard from './components/Dashboard.vue';
   <SideBar/>
   <MainBody>
     <Navbar/>
-    <Dashboard/>
+    <router-view/>
   </MainBody>
 </template>
