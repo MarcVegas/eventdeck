@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import {createRouter, createWebHistory} from 'vue-router'
 
 import VueChartkick from 'vue-chartkick'
 import 'chartkick/chart.js'
@@ -12,6 +13,12 @@ import TuneVariant from 'vue-material-design-icons/TuneVariant.vue'
 
 import './index.css'
 import './css/shared.css'
+import routes from './routes'
+
+const router = createRouter({
+    history: createWebHistory(),
+    routes,
+})
 
 const app = createApp(App)
 app.component('ViewDashboard', ViewDashboard)
@@ -21,5 +28,6 @@ app.component('ViewDashboard', ViewDashboard)
     .component('TuneVariant', TuneVariant)
 
 app.use(VueChartkick)
+app.use(router)
 
 app.mount('#app')
