@@ -1,10 +1,10 @@
 <script setup>
-import Card from './Card.vue';
+import Card from './Card.vue'
 
 const data = [
   {name: 'Workout', data: {'2017-01-01 00:00:00 -0800': 3, '2017-01-02 00:00:00 -0800': 4}},
   {name: 'Call parents', data: {'2017-01-01 00:00:00 -0800': 5, '2017-01-02 00:00:00 -0800': 3}}
-];
+]
 </script>
 
 <template>
